@@ -1,0 +1,125 @@
+{
+    "layouts": [
+        {
+            "name": "MM Items",
+            "color": "#b74096",
+            "offset": [0, 0],
+            "width": 600,
+            "height": 150,
+            "columns": 1,
+            "entries": []
+        },
+        {
+            "name": "OoT Items",
+            "color": "#b74096",
+            "offset": [0, 0],
+            "width": 300,
+            "height": 150,
+            "columns": 6,
+            "entries": [
+                {
+                    "name": "sticks",
+                    "type": "count",
+                    "max": 3,
+                    "icon": "images/items/oot/stick.png"
+                },
+                {
+                    "name": "nuts",
+                    "type": "count",
+                    "max": 3,
+                    "icon": "images/items/oot/nut.png"
+                },
+                {
+                    "name": "bombs",
+                    "type": "count",
+                    "max": 3,
+                    "icon": "images/items/oot/bomb.png"
+                },
+                {
+                    "name": "bow",
+                    "type": "count",
+                    "max": 2,
+                    "icon": "images/items/oot/bow.png"
+                },
+                {
+                    "name": "fire_arrow",
+                    "type": "toggle",
+                    "icon": "images/items/oot/arrow_fire.png"
+                },
+                {
+                    "name": "dins",
+                    "type": "toggle",
+                    "icon": "images/items/oot/spell_din.png"
+                },
+                {
+                    "name": "slingshot",
+                    "type": "count",
+                    "max": 2,
+                    "icon": "images/items/oot/slingshot.png"
+                },
+                {
+                    "name": "ocarina",
+                    "type": "state",
+                    "icons": [
+                        "images/items/oot/ocarina_fairy.png",
+                        "images/items/oot/ocarina_time.png"
+                    ]
+                },
+                {
+                    "name": "bombchus",
+                    "type": "count",
+                    "max": 2,
+                    "icon": "images/items/oot/bombchu.png"
+                },
+                {
+                    "name": "hookshot",
+                    "type": "state",
+                    "icons": [
+                        "images/items/oot/hookshot_short.png",
+                        "images/items/oot/hookshot_long.png"
+                    ]
+                },
+                {
+                    "name": "ice_arrow",
+                    "type": "toggle",
+                    "icon": "images/items/oot/arrow_ice.png"
+                },
+                {
+                    "name": "farores",
+                    "type": "toggle",
+                    "icon": "images/items/oot/spell_farore.png"
+                },
+                {
+                    "name": "boomerang",
+                    "type": "toggle",
+                    "icon": "images/items/oot/boomerang.png"
+                },
+                {
+                    "name": "lens",
+                    "type": "toggle",
+                    "icon": "images/items/oot/lens.png"
+                },
+                {
+                    "name": "beans",
+                    "type": "toggle",
+                    "icon": "images/items/oot/bean.png"
+                },
+                {
+                    "name": "hammer",
+                    "type": "toggle",
+                    "icon": "images/items/oot/hammer.png"
+                },
+                {
+                    "name": "light_arrow",
+                    "type": "toggle",
+                    "icon": "images/items/oot/arrow_light.png"
+                },
+                {
+                    "name": "nayrus",
+                    "type": "toggle",
+                    "icon": "images/items/oot/spell_nayru.png"
+                }
+            ]
+        }
+    ]
+}

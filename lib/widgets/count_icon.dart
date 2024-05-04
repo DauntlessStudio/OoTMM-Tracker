@@ -33,7 +33,7 @@ class _CountIconState extends State<CountIcon> {
       child: Stack(
         children: [
           IconButton(onPressed: incrementCount, icon: _count > 0 ? iconDefault : iconGrayscale),
-          Text("$_count"),
+          Text("$_count", style: TextStyle(color: _count >= widget.max ? Colors.green : Colors.white),),
         ],
       ),
     );

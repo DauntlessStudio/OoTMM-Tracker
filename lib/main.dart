@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:ootmm_tracker/tracker_item.dart';
 
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red, background: Colors.blueGrey),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -32,25 +34,32 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  Future<String>? asset;
+
+  @override
+  void initState() {
+    super.initState();
+    asset = DefaultAssetBundle.of(context).loadString("tracker.json");
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          margin: const EdgeInsets.all(15.0),
-          padding: const EdgeInsets.all(3.0),
-          decoration: BoxDecoration(border: Border.all(color: Colors.amberAccent)),
-          child: GridView.count(
-          crossAxisCount: 5,
-          shrinkWrap: true,
-          children: <Widget>[
-            TrackerToggleItem("images/truth.png").getWidget(),
-            TrackerStateItem(["images/bottle.png","images/bottle_blue.png","images/bottle_red.png"]).getWidget(),
-            TrackerCountItem("images/triforce_piece.png", 3).getWidget(),
-          ],
-        ),
-        )
+        child: FutureBuilder(future: asset, builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            Tracker tracker = Tracker.fromJson(jsonDecode(snapshot.data!));
+            return tracker.getWidget();
+          } else if (snapshot.hasError) {
+            return const Icon(
+              Icons.error_outline,
+              color: Colors.red,
+              size: 60,
+            );
+          } else {
+            return const CircularProgressIndicator();
+          }
+        })
       ),
     );
   }
