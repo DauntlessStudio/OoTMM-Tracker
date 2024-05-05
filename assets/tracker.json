@@ -4,8 +4,8 @@
             "name": "Ocarina of Time",
             "color": "#7e97c2",
             "offset": [0, 0],
-            "width": 502,
-            "height": 408,
+            "width": 500,
+            "height": 400,
             "layouts": [
                 {
                     "name": "OoT Items",
@@ -122,9 +122,9 @@
                 {
                     "name": "OoT Bottles",
                     "color": "#7e97c2",
-                    "offset": [0, 152],
+                    "offset": [0, 150],
                     "width": 200,
-                    "height": 52,
+                    "height": 50,
                     "columns": 4,
                     "entries": [
                         {
@@ -172,9 +172,9 @@
                 {
                     "name": "OoT Equipment",
                     "color": "#7e97c2",
-                    "offset": [0, 204],
+                    "offset": [0, 200],
                     "width": 150,
-                    "height": 202,
+                    "height": 200,
                     "columns": 3,
                     "entries": [
                         {
@@ -256,9 +256,9 @@
                 {
                     "name": "OoT Child Trades",
                     "color": "#7e97c2",
-                    "offset": [150, 204],
+                    "offset": [150, 200],
                     "width": 50,
-                    "height": 202,
+                    "height": 200,
                     "columns": 1,
                     "entries": [
                         {
@@ -286,9 +286,9 @@
                 {
                     "name": "OoT Adult Trades",
                     "color": "#7e97c2",
-                    "offset": [200, 152],
+                    "offset": [200, 150],
                     "width": 100,
-                    "height": 252,
+                    "height": 250,
                     "columns": 2,
                     "entries": [
                         {
@@ -348,7 +348,7 @@
                     "color": "#7e97c2",
                     "offset": [300, 0],
                     "width": 100,
-                    "height": 102,
+                    "height": 100,
                     "columns": 2,
                     "entries": [
                         {
@@ -382,9 +382,9 @@
                 {
                     "name": "OoT Songs",
                     "color": "#7e97c2",
-                    "offset": [300, 102],
+                    "offset": [300, 100],
                     "width": 100,
-                    "height": 302,
+                    "height": 300,
                     "columns": 2,
                     "entries": [
                         {
@@ -454,7 +454,7 @@
                     "color": "#7e97c2",
                     "offset": [400, 0],
                     "width": 100,
-                    "height": 404,
+                    "height": 400,
                     "columns": 2,
                     "entries": [
                         {
@@ -522,6 +522,300 @@
                             "name": "ganon_boss_key",
                             "type": "toggle",
                             "icon": "images/keys/boss_key.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Majora's Mask",
+            "color": "#5e1896",
+            "offset": [0, 400],
+            "width": 500,
+            "height": 400,
+            "layouts": [
+                {
+                    "name": "MM Items",
+                    "color": "#5e1896",
+                    "offset": [0, 0],
+                    "width": 350,
+                    "height": 150,
+                    "columns": 7,
+                    "entries": [
+                        {
+                            "name": "ocarina",
+                            "type": "toggle",
+                            "icon": "images/items/mm/ocarina.png"
+                        },
+                        {
+                            "name": "bow",
+                            "type": "toggle",
+                            "icon": "images/items/mm/bow.png"
+                        },
+                        {
+                            "name": "arrow_fire",
+                            "type": "toggle",
+                            "icon": "images/items/mm/arrow_fire.png"
+                        },
+                        {
+                            "name": "arrow_ice",
+                            "type": "toggle",
+                            "icon": "images/items/mm/arrow_ice.png"
+                        },
+                        {
+                            "name": "arrow_light",
+                            "type": "toggle",
+                            "icon": "images/items/mm/arrow_light.png"
+                        },
+                        {
+                            "name": "bottle",
+                            "type": "toggle",
+                            "icon": "images/items/mm/bottle_empty.png"
+                        },
+                        {
+                            "name": "bottle",
+                            "type": "toggle",
+                            "icon": "images/items/mm/bottle_empty.png"
+                        },
+                        {
+                            "name": "bomb",
+                            "type": "toggle",
+                            "icon": "images/items/mm/bomb.png"
+                        },
+                        {
+                            "name": "bombchu",
+                            "type": "toggle",
+                            "icon": "images/items/mm/bombchu.png"
+                        },
+                        {
+                            "name": "stick",
+                            "type": "toggle",
+                            "icon": "images/items/mm/stick.png"
+                        },
+                        {
+                            "name": "nut",
+                            "type": "toggle",
+                            "icon": "images/items/mm/nut.png"
+                        },
+                        {
+                            "name": "bean",
+                            "type": "toggle",
+                            "icon": "images/items/mm/bean.png"
+                        },
+                        {
+                            "name": "bottle",
+                            "type": "toggle",
+                            "icon": "images/items/mm/bottle_empty.png"
+                        },
+                        {
+                            "name": "bottle",
+                            "type": "toggle",
+                            "icon": "images/items/mm/bottle_empty.png"
+                        },
+                        {
+                            "name": "keg",
+                            "type": "toggle",
+                            "icon": "images/items/mm/keg.png"
+                        },
+                        {
+                            "name": "box",
+                            "type": "toggle",
+                            "icon": "images/items/mm/box.png"
+                        },
+                        {
+                            "name": "lens",
+                            "type": "toggle",
+                            "icon": "images/items/mm/lens.png"
+                        },
+                        {
+                            "name": "hookshot",
+                            "type": "toggle",
+                            "icon": "images/items/mm/hookshot.png"
+                        },
+                        {
+                            "name": "sword4",
+                            "type": "toggle",
+                            "icon": "images/items/mm/sword4.png"
+                        },
+                        {
+                            "name": "bottle",
+                            "type": "toggle",
+                            "icon": "images/items/mm/bottle_empty.png"
+                        },
+                        {
+                            "name": "bottle",
+                            "type": "toggle",
+                            "icon": "images/items/mm/bottle_empty.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "MM Masks",
+                    "color": "#5e1896",
+                    "offset": [0, 150],
+                    "width": 350,
+                    "height": 250,
+                    "columns": 6,
+                    "entries": [
+                        {
+                            "name": "mask_postman",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_postman.png"
+                        },
+                        {
+                            "name": "mask_allnight",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_allnight.png"
+                        },
+                        {
+                            "name": "mask_blast",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_blast.png"
+                        },
+                        {
+                            "name": "mask_stone",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_stone.png"
+                        },
+                        {
+                            "name": "mask_greatfairy",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_greatfairy.png"
+                        },
+                        {
+                            "name": "mask_deku",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_deku.png"
+                        },
+                        {
+                            "name": "mask_keaton",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_keaton.png"
+                        },
+                        {
+                            "name": "mask_bremen",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_bremen.png"
+                        },
+                        {
+                            "name": "mask_bunny",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_bunny.png"
+                        },
+                        {
+                            "name": "mask_dongero",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_dongero.png"
+                        },
+                        {
+                            "name": "mask_scents",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_scents.png"
+                        },
+                        {
+                            "name": "mask_goron",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_goron.png"
+                        },
+                        {
+                            "name": "mask_romani",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_romani.png"
+                        },
+                        {
+                            "name": "mask_troupe",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_troupe.png"
+                        },
+                        {
+                            "name": "mask_kafei",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_kafei.png"
+                        },
+                        {
+                            "name": "mask_couple",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_couple.png"
+                        },
+                        {
+                            "name": "mask_truth",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_truth.png"
+                        },
+                        {
+                            "name": "mask_zora",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_zora.png"
+                        },
+                        {
+                            "name": "mask_kamaro",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_kamaro.png"
+                        },
+                        {
+                            "name": "mask_garo",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_garo.png"
+                        },
+                        {
+                            "name": "mask_gibdo",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_gibdo.png"
+                        },
+                        {
+                            "name": "mask_captain",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_captain.png"
+                        },
+                        {
+                            "name": "mask_giant",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_giant.png"
+                        },
+                        {
+                            "name": "mask_fiercedeity",
+                            "type": "toggle",
+                            "icon": "images/items/mm/mask_fiercedeity.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "MM Fairies",
+                    "color": "#5e1896",
+                    "offset": [350, 0],
+                    "width": 50,
+                    "height": 250,
+                    "columns": 1,
+                    "entries": [
+                        {
+                            "name": "fairy_town",
+                            "type": "count",
+                            "max": 1,
+                            "icon": "images/items/mm/fairy_town.png"
+                        },
+                        {
+                            "name": "fairy_woodfall",
+                            "type": "count",
+                            "max": 15,
+                            "icon": "images/items/mm/fairy_woodfall.png"
+                        },
+                        {
+                            "name": "fairy_snowhead",
+                            "type": "count",
+                            "max": 15,
+                            "icon": "images/items/mm/fairy_snowhead.png"
+                        },
+                        {
+                            "name": "fairy_greatbay",
+                            "type": "count",
+                            "max": 15,
+                            "icon": "images/items/mm/fairy_greatbay.png"
+                        },
+                        {
+                            "name": "fairy_stonetower",
+                            "type": "count",
+                            "max": 15,
+                            "icon": "images/items/mm/fairy_stonetower.png"
                         }
                     ]
                 }

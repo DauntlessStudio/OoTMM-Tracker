@@ -107,7 +107,10 @@ class TrackerBox {
     return Container(
       decoration: BoxDecoration(
         color: colorScheme?.primary,
-        border: colorScheme != null ? Border.all(color: colorScheme!.secondary) : null,
+        border: colorScheme != null ? Border.all(
+          color: colorScheme!.secondary,
+          strokeAlign: BorderSide.strokeAlignOutside,
+        ) : null,
       ),
       child: GridView.count(
         shrinkWrap: true,
@@ -150,7 +153,10 @@ class TrackerGroup {
     return Container(
       decoration: BoxDecoration(
         color: colorScheme?.primary,
-        border: colorScheme != null ? Border.all(color: colorScheme!.secondary) : null,
+        border: colorScheme != null ? Border.all(
+          color: colorScheme!.secondary,
+          strokeAlign: BorderSide.strokeAlignOutside,
+        ) : null,
       ),
       alignment: Alignment.topLeft,
       child: CustomMultiChildLayout(

@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.red, background: Colors.blueGrey),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white, background: Colors.blueGrey),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -45,22 +45,20 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: FutureBuilder(future: asset, builder: (context, snapshot) {
-          if (snapshot.hasData) {
-            Tracker tracker = Tracker.fromJson(jsonDecode(snapshot.data!));
-            return tracker.getWidget();
-          } else if (snapshot.hasError) {
-            return const Icon(
-              Icons.error_outline,
-              color: Colors.red,
-              size: 60,
-            );
-          } else {
-            return const CircularProgressIndicator();
-          }
-        })
-      ),
+      body: FutureBuilder(future: asset, builder: (context, snapshot) {
+        if (snapshot.hasData) {
+          Tracker tracker = Tracker.fromJson(jsonDecode(snapshot.data!));
+          return tracker.getWidget();
+        } else if (snapshot.hasError) {
+          return const Icon(
+            Icons.error_outline,
+            color: Colors.red,
+            size: 60,
+          );
+        } else {
+          return const CircularProgressIndicator();
+        }
+      }),
     );
   }
 }
