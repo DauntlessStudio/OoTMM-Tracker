@@ -109,7 +109,6 @@ class TrackerBox {
         color: colorScheme?.primary,
         border: colorScheme != null ? Border.all(color: colorScheme!.secondary) : null,
       ),
-      alignment: Alignment.topLeft,
       child: GridView.count(
         shrinkWrap: true,
         crossAxisCount: columns,
@@ -119,31 +118,97 @@ class TrackerBox {
   }
 }
 
-class Tracker {
-  final List<TrackerBox> trackers;
+class TrackerGroup {
+  final String name;
+  final BoxConstraints constraints;
+  final ColorScheme? colorScheme;
+  final Offset? offset;
+  final List<TrackerBox> layouts;
 
-  Tracker(this.trackers);
+  TrackerGroup({required this.name, required this.layouts, required this.constraints, this.colorScheme, this.offset});
+
+  factory TrackerGroup.fromJson(Map<String, dynamic> data) {
+    final String name = data["name"] as String;
+
+    final double width = data["width"] as double? ?? 300;
+    final double height = data["height"] as double? ?? 300;
+    final BoxConstraints constraints = BoxConstraints.tight(Size(width, height));
+
+    final List<TrackerBox> layouts = (data["layouts"] as List<dynamic>).map((e) => TrackerBox.fromJson(e)).toList();
+    
+    final ColorScheme? colorScheme = data["color"] != null ? ColorScheme.fromSeed(seedColor: HexColor(data["color"] as String)) : null;
+
+    final List<double>? offsetRaw = data["offset"] != null
+      ? (data["offset"] as List<dynamic>).map((e) => e as double).toList()
+      : null;
+    final Offset? offset = offsetRaw != null ? Offset(offsetRaw[0], offsetRaw[1]) : null;
+
+    return TrackerGroup(name: name, layouts: layouts, constraints: constraints, colorScheme: colorScheme, offset: offset);
+  }
+
+  Container getWidget() {
+    return Container(
+      decoration: BoxDecoration(
+        color: colorScheme?.primary,
+        border: colorScheme != null ? Border.all(color: colorScheme!.secondary) : null,
+      ),
+      alignment: Alignment.topLeft,
+      child: CustomMultiChildLayout(
+      delegate: _TrackeGroupDelegate(layouts),
+      children: <Widget>[
+        for (final TrackerBox tracker in layouts) 
+          LayoutId(id: tracker.name, child: tracker.getWidget())
+        ],
+      ),
+    );
+  }
+}
+
+class Tracker {
+  final List<TrackerGroup> groups;
+
+  Tracker(this.groups);
 
   factory Tracker.fromJson(Map<String, dynamic> data) {
-    final List<TrackerBox> trackers = (data["layouts"] as List<dynamic>).map((e) => TrackerBox.fromJson(e)).toList();
-    return Tracker(trackers);
+    final List<TrackerGroup> groups = (data["groups"] as List<dynamic>).map((e) => TrackerGroup.fromJson(e)).toList();
+    return Tracker(groups);
   }
 
   CustomMultiChildLayout getWidget() {
     return CustomMultiChildLayout(
-      delegate: _TrackerLayoutDelegate(trackers),
+      delegate: _TrackerLayoutDelegate(groups),
       children: <Widget>[
-        for (final TrackerBox tracker in trackers) 
-          LayoutId(id: tracker.name, child: tracker.getWidget())
+        for (final TrackerGroup group in groups) 
+          LayoutId(id: group.name, child: group.getWidget())
       ],
     );
   }
 }
 
 class _TrackerLayoutDelegate extends MultiChildLayoutDelegate {
-  final List<TrackerBox> trackers;
+  final List<TrackerGroup> trackers;
 
   _TrackerLayoutDelegate(this.trackers);
+
+  @override
+  void performLayout(Size size) {
+    for (final TrackerGroup tracker in trackers) {
+      layoutChild(tracker.name, tracker.constraints);
+      positionChild(tracker.name, tracker.offset != null ? tracker.offset! : Offset.zero);
+    }
+  }
+
+  @override
+  bool shouldRelayout(covariant _TrackerLayoutDelegate oldDelegate) {
+    return oldDelegate.trackers != trackers;
+  }
+
+}
+
+class _TrackeGroupDelegate extends MultiChildLayoutDelegate {
+  final List<TrackerBox> trackers;
+
+  _TrackeGroupDelegate(this.trackers);
 
   @override
   void performLayout(Size size) {
@@ -154,7 +219,7 @@ class _TrackerLayoutDelegate extends MultiChildLayoutDelegate {
   }
 
   @override
-  bool shouldRelayout(covariant _TrackerLayoutDelegate oldDelegate) {
+  bool shouldRelayout(covariant _TrackeGroupDelegate oldDelegate) {
     return oldDelegate.trackers != trackers;
   }
 

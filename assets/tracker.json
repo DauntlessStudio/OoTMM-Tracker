@@ -1,123 +1,529 @@
 {
-    "layouts": [
+    "groups": [
         {
-            "name": "MM Items",
-            "color": "#b74096",
+            "name": "Ocarina of Time",
+            "color": "#7e97c2",
             "offset": [0, 0],
-            "width": 600,
-            "height": 150,
-            "columns": 1,
-            "entries": []
-        },
-        {
-            "name": "OoT Items",
-            "color": "#b74096",
-            "offset": [0, 0],
-            "width": 300,
-            "height": 150,
-            "columns": 6,
-            "entries": [
+            "width": 502,
+            "height": 408,
+            "layouts": [
                 {
-                    "name": "sticks",
-                    "type": "count",
-                    "max": 3,
-                    "icon": "images/items/oot/stick.png"
-                },
-                {
-                    "name": "nuts",
-                    "type": "count",
-                    "max": 3,
-                    "icon": "images/items/oot/nut.png"
-                },
-                {
-                    "name": "bombs",
-                    "type": "count",
-                    "max": 3,
-                    "icon": "images/items/oot/bomb.png"
-                },
-                {
-                    "name": "bow",
-                    "type": "count",
-                    "max": 2,
-                    "icon": "images/items/oot/bow.png"
-                },
-                {
-                    "name": "fire_arrow",
-                    "type": "toggle",
-                    "icon": "images/items/oot/arrow_fire.png"
-                },
-                {
-                    "name": "dins",
-                    "type": "toggle",
-                    "icon": "images/items/oot/spell_din.png"
-                },
-                {
-                    "name": "slingshot",
-                    "type": "count",
-                    "max": 2,
-                    "icon": "images/items/oot/slingshot.png"
-                },
-                {
-                    "name": "ocarina",
-                    "type": "state",
-                    "icons": [
-                        "images/items/oot/ocarina_fairy.png",
-                        "images/items/oot/ocarina_time.png"
+                    "name": "OoT Items",
+                    "color": "#7e97c2",
+                    "offset": [0, 0],
+                    "width": 300,
+                    "height": 150,
+                    "columns": 6,
+                    "entries": [
+                        {
+                            "name": "sticks",
+                            "type": "count",
+                            "max": 3,
+                            "icon": "images/items/oot/stick.png"
+                        },
+                        {
+                            "name": "nuts",
+                            "type": "count",
+                            "max": 3,
+                            "icon": "images/items/oot/nut.png"
+                        },
+                        {
+                            "name": "bombs",
+                            "type": "count",
+                            "max": 3,
+                            "icon": "images/items/oot/bomb.png"
+                        },
+                        {
+                            "name": "bow",
+                            "type": "count",
+                            "max": 2,
+                            "icon": "images/items/oot/bow.png"
+                        },
+                        {
+                            "name": "fire_arrow",
+                            "type": "toggle",
+                            "icon": "images/items/oot/arrow_fire.png"
+                        },
+                        {
+                            "name": "dins",
+                            "type": "toggle",
+                            "icon": "images/items/oot/spell_din.png"
+                        },
+                        {
+                            "name": "slingshot",
+                            "type": "count",
+                            "max": 2,
+                            "icon": "images/items/oot/slingshot.png"
+                        },
+                        {
+                            "name": "ocarina",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/ocarina_fairy.png",
+                                "images/items/oot/ocarina_time.png"
+                            ]
+                        },
+                        {
+                            "name": "bombchus",
+                            "type": "count",
+                            "max": 2,
+                            "icon": "images/items/oot/bombchu.png"
+                        },
+                        {
+                            "name": "hookshot",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/hookshot_short.png",
+                                "images/items/oot/hookshot_long.png"
+                            ]
+                        },
+                        {
+                            "name": "ice_arrow",
+                            "type": "toggle",
+                            "icon": "images/items/oot/arrow_ice.png"
+                        },
+                        {
+                            "name": "farores",
+                            "type": "toggle",
+                            "icon": "images/items/oot/spell_farore.png"
+                        },
+                        {
+                            "name": "boomerang",
+                            "type": "toggle",
+                            "icon": "images/items/oot/boomerang.png"
+                        },
+                        {
+                            "name": "lens",
+                            "type": "toggle",
+                            "icon": "images/items/oot/lens.png"
+                        },
+                        {
+                            "name": "beans",
+                            "type": "toggle",
+                            "icon": "images/items/oot/bean.png"
+                        },
+                        {
+                            "name": "hammer",
+                            "type": "toggle",
+                            "icon": "images/items/oot/hammer.png"
+                        },
+                        {
+                            "name": "light_arrow",
+                            "type": "toggle",
+                            "icon": "images/items/oot/arrow_light.png"
+                        },
+                        {
+                            "name": "nayrus",
+                            "type": "toggle",
+                            "icon": "images/items/oot/spell_nayru.png"
+                        }
                     ]
                 },
                 {
-                    "name": "bombchus",
-                    "type": "count",
-                    "max": 2,
-                    "icon": "images/items/oot/bombchu.png"
-                },
-                {
-                    "name": "hookshot",
-                    "type": "state",
-                    "icons": [
-                        "images/items/oot/hookshot_short.png",
-                        "images/items/oot/hookshot_long.png"
+                    "name": "OoT Bottles",
+                    "color": "#7e97c2",
+                    "offset": [0, 152],
+                    "width": 200,
+                    "height": 52,
+                    "columns": 4,
+                    "entries": [
+                        {
+                            "name": "bottle_0",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/bottle.png",
+                                "images/items/oot/bottle_red.png",
+                                "images/items/oot/bottle_green.png",
+                                "images/items/oot/bottle_blue.png"
+                            ]
+                        },
+                        {
+                            "name": "bottle_1",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/bottle.png",
+                                "images/items/oot/bottle_red.png",
+                                "images/items/oot/bottle_green.png",
+                                "images/items/oot/bottle_blue.png"
+                            ]
+                        },
+                        {
+                            "name": "bottle_2",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/bottle.png",
+                                "images/items/oot/bottle_red.png",
+                                "images/items/oot/bottle_green.png",
+                                "images/items/oot/bottle_blue.png"
+                            ]
+                        },
+                        {
+                            "name": "bottle_3",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/bottle.png",
+                                "images/items/oot/bottle_red.png",
+                                "images/items/oot/bottle_green.png",
+                                "images/items/oot/bottle_blue.png"
+                            ]
+                        }
                     ]
                 },
                 {
-                    "name": "ice_arrow",
-                    "type": "toggle",
-                    "icon": "images/items/oot/arrow_ice.png"
+                    "name": "OoT Equipment",
+                    "color": "#7e97c2",
+                    "offset": [0, 204],
+                    "width": 150,
+                    "height": 202,
+                    "columns": 3,
+                    "entries": [
+                        {
+                            "name": "sword1",
+                            "type": "toggle",
+                            "icon": "images/items/oot/sword1.png"
+                        },
+                        {
+                            "name": "sword2",
+                            "type": "toggle",
+                            "icon": "images/items/oot/sword2.png"
+                        },
+                        {
+                            "name": "sword3",
+                            "type": "toggle",
+                            "icon": "images/items/oot/sword3.png"
+                        },
+                        {
+                            "name": "shield1",
+                            "type": "toggle",
+                            "icon": "images/items/oot/shield1.png"
+                        },
+                        {
+                            "name": "shield2",
+                            "type": "toggle",
+                            "icon": "images/items/oot/shield2.png"
+                        },
+                        {
+                            "name": "shield3",
+                            "type": "toggle",
+                            "icon": "images/items/oot/shield3.png"
+                        },
+                        {
+                            "name": "tunic",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/tunic_green.png",
+                                "images/items/oot/tunic_red.png",
+                                "images/items/oot/tunic_blue.png"
+                            ]
+                        },
+                        {
+                            "name": "boots_iron",
+                            "type": "toggle",
+                            "icon": "images/items/oot/boots_iron.png"
+                        },
+                        {
+                            "name": "boots_hover",
+                            "type": "toggle",
+                            "icon": "images/items/oot/boots_hover.png"
+                        },
+                        {
+                            "name": "scale",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/scale1.png",
+                                "images/items/oot/scale2.png"
+                            ]
+                        },
+                        {
+                            "name": "lift",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/lift1.png",
+                                "images/items/oot/lift2.png",
+                                "images/items/oot/lift3.png"
+                            ]
+                        },
+                        {
+                            "name": "magic",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/magic1.png",
+                                "images/items/oot/magic2.png"
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "name": "farores",
-                    "type": "toggle",
-                    "icon": "images/items/oot/spell_farore.png"
+                    "name": "OoT Child Trades",
+                    "color": "#7e97c2",
+                    "offset": [150, 204],
+                    "width": 50,
+                    "height": 202,
+                    "columns": 1,
+                    "entries": [
+                        {
+                            "name": "trade_cucco",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_cucco.png"
+                        },
+                        {
+                            "name": "trade_letter",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_letter.png"
+                        },
+                        {
+                            "name": "mask_skull",
+                            "type": "toggle",
+                            "icon": "images/items/oot/mask_skull.png"
+                        },
+                        {
+                            "name": "mask_truth",
+                            "type": "toggle",
+                            "icon": "images/items/oot/mask_truth.png"
+                        }
+                    ]
                 },
                 {
-                    "name": "boomerang",
-                    "type": "toggle",
-                    "icon": "images/items/oot/boomerang.png"
+                    "name": "OoT Adult Trades",
+                    "color": "#7e97c2",
+                    "offset": [200, 152],
+                    "width": 100,
+                    "height": 252,
+                    "columns": 2,
+                    "entries": [
+                        {
+                            "name": "trade_cucco_adult",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_cucco.png"
+                        },
+                        {
+                            "name": "trade_cojiro",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_cojiro.png"
+                        },
+                        {
+                            "name": "trade_mushroom",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_mushroom.png"
+                        },
+                        {
+                            "name": "trade_medicine",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_medicine.png"
+                        },
+                        {
+                            "name": "trade_saw",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_saw.png"
+                        },
+                        {
+                            "name": "trade_broken_sword",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_broken_sword.png"
+                        },
+                        {
+                            "name": "trade_perscription",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_perscription.png"
+                        },
+                        {
+                            "name": "trade_frog",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_frog.png"
+                        },
+                        {
+                            "name": "trade_eyedrops",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_eyedrops.png"
+                        },
+                        {
+                            "name": "trade_claim",
+                            "type": "toggle",
+                            "icon": "images/items/oot/trade_claim.png"
+                        }
+                    ]
                 },
                 {
-                    "name": "lens",
-                    "type": "toggle",
-                    "icon": "images/items/oot/lens.png"
+                    "name": "OoT Progress",
+                    "color": "#7e97c2",
+                    "offset": [300, 0],
+                    "width": 100,
+                    "height": 102,
+                    "columns": 2,
+                    "entries": [
+                        {
+                            "name": "agony",
+                            "type": "toggle",
+                            "icon": "images/items/oot/agony.png"
+                        },
+                        {
+                            "name": "gerudocard",
+                            "type": "toggle",
+                            "icon": "images/items/oot/gerudocard.png"
+                        },
+                        {
+                            "name": "skulltula_token",
+                            "type": "count",
+                            "max": 50,
+                            "icon": "images/items/oot/skulltula_token.png"
+                        },
+                        {
+                            "name": "wallet",
+                            "type": "state",
+                            "icons": [
+                                "images/items/oot/wallet.png",
+                                "images/items/oot/wallet1.png",
+                                "images/items/oot/wallet2.png",
+                                "images/items/oot/wallet3.png"
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "name": "beans",
-                    "type": "toggle",
-                    "icon": "images/items/oot/bean.png"
+                    "name": "OoT Songs",
+                    "color": "#7e97c2",
+                    "offset": [300, 102],
+                    "width": 100,
+                    "height": 302,
+                    "columns": 2,
+                    "entries": [
+                        {
+                            "name": "song_zelda",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_zelda.png"
+                        },
+                        {
+                            "name": "song_prelude",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_prelude.png"
+                        },
+                        {
+                            "name": "song_epona",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_epona.png"
+                        },
+                        {
+                            "name": "song_minuet",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_minuet.png"
+                        },
+                        {
+                            "name": "song_saria",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_saria.png"
+                        },
+                        {
+                            "name": "song_bolero",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_bolero.png"
+                        },
+                        {
+                            "name": "song_sun",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_sun.png"
+                        },
+                        {
+                            "name": "song_serenade",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_serenade.png"
+                        },
+                        {
+                            "name": "song_time",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_time.png"
+                        },
+                        {
+                            "name": "song_nocturne",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_nocturne.png"
+                        },
+                        {
+                            "name": "song_storms",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_storms.png"
+                        },
+                        {
+                            "name": "song_requiem",
+                            "type": "toggle",
+                            "icon": "images/items/oot/song_requiem.png"
+                        }
+                    ]
                 },
                 {
-                    "name": "hammer",
-                    "type": "toggle",
-                    "icon": "images/items/oot/hammer.png"
-                },
-                {
-                    "name": "light_arrow",
-                    "type": "toggle",
-                    "icon": "images/items/oot/arrow_light.png"
-                },
-                {
-                    "name": "nayrus",
-                    "type": "toggle",
-                    "icon": "images/items/oot/spell_nayru.png"
+                    "name": "OoT Keys",
+                    "color": "#7e97c2",
+                    "offset": [400, 0],
+                    "width": 100,
+                    "height": 404,
+                    "columns": 2,
+                    "entries": [
+                        {
+                            "name": "forest_small_key",
+                            "type": "count",
+                            "max": 5,
+                            "icon": "images/keys/small_key.png"
+                        },
+                        {
+                            "name": "forest_boss_key",
+                            "type": "toggle",
+                            "icon": "images/keys/boss_key.png"
+                        },
+                        {
+                            "name": "fire_small_key",
+                            "type": "count",
+                            "max": 5,
+                            "icon": "images/keys/small_key.png"
+                        },
+                        {
+                            "name": "fire_boss_key",
+                            "type": "toggle",
+                            "icon": "images/keys/boss_key.png"
+                        },
+                        {
+                            "name": "water_small_key",
+                            "type": "count",
+                            "max": 5,
+                            "icon": "images/keys/small_key.png"
+                        },
+                        {
+                            "name": "water_boss_key",
+                            "type": "toggle",
+                            "icon": "images/keys/boss_key.png"
+                        },
+                        {
+                            "name": "shadow_small_key",
+                            "type": "count",
+                            "max": 5,
+                            "icon": "images/keys/small_key.png"
+                        },
+                        {
+                            "name": "shadow_boss_key",
+                            "type": "toggle",
+                            "icon": "images/keys/boss_key.png"
+                        },
+                        {
+                            "name": "spirit_small_key",
+                            "type": "count",
+                            "max": 5,
+                            "icon": "images/keys/small_key.png"
+                        },
+                        {
+                            "name": "spirit_boss_key",
+                            "type": "toggle",
+                            "icon": "images/keys/boss_key.png"
+                        },
+                        {
+                            "name": "ganon_small_key",
+                            "type": "count",
+                            "max": 5,
+                            "icon": "images/keys/small_key.png"
+                        },
+                        {
+                            "name": "ganon_boss_key",
+                            "type": "toggle",
+                            "icon": "images/keys/boss_key.png"
+                        }
+                    ]
                 }
             ]
         }
